@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- AppBarLayout with profile title and back button -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:background="@color/greenlightdark"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Back Button -->
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back Button"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@android:color/white"
+                tools:ignore="TouchTargetSizeCheck,UseAppTint" />
+
+            <!-- Profile title text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Profile"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Main content layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- First Profile Image -->
+        <ImageView
+            android:id="@+id/imgProfile1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Profile Image 1"
+            android:scaleType="centerCrop"
+            android:outlineAmbientShadowColor="@color/greendark"
+            android:src="@drawable/bemi" />
+
+        <!-- First User Name -->
+        <TextView
+            android:id="@+id/tvUserName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bemi Raihan Rawadi"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"/>
+
+        <!-- First User Info -->
+        <TextView
+            android:id="@+id/tvUserInfo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2203421034"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="12dp"/>
+
+        <!-- Second Profile Image -->
+        <ImageView
+            android:id="@+id/imgProfile2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/roby"
+            android:contentDescription="Profile Image 2"
+            android:scaleType="centerCrop"/>
+
+        <!-- Second User Name -->
+        <TextView
+            android:id="@+id/tvUserName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muhammad Roby Meidiansyah"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Second User Info -->
+        <TextView
+            android:id="@+id/tvUserInfo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2203421026"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
